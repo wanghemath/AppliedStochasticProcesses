@@ -1,0 +1,15 @@
+# Keep instructor answers out of a student-facing repository.
+/instructor/
+# Private verification records and authoring templates are not student materials.
+/checks/
+/templates/
+/scripts/check_*.cjs
+!/scripts/check_math.cjs
+# Local environments, caches, and generated release packages.
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+/dist/
+/build/

@@ -1,0 +1,10 @@
+# Core course computation. Compatible ranges; the exact verified environment is in requirements-tested.txt.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+# Jupyter editing, clean-kernel execution, and notebook format validation.
+jupyterlab>=4,<5
+ipykernel>=6,<7
+nbformat>=5.7,<6
+nbclient>=0.5.13,<1

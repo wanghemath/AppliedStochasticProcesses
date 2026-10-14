@@ -1,0 +1,43 @@
+{
+  "dataset": "Bike Sharing",
+  "creator": "Hadi Fanaee-T",
+  "year": 2013,
+  "doi": "10.24432/C5W894",
+  "source_page": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+  "archive_url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+  "retrieved_on": "2026-10-12",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_verified_on": "2026-10-12",
+  "license_evidence": "UCI dataset landing page, License section",
+  "archive_sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+  "source_member": "day.csv",
+  "source_member_sha256": "a6bcf826782d3c0fbfdcbeead17cd0884185a0dafe8ff10cd48a874ee7ba18be",
+  "source_rows": 731,
+  "sample_sha256": "fb9790e24f07b237431b89c787a24ed8e97c365437a86f7161269df9452b2329",
+  "browser_js_sha256": "8398a5eeca1ecc734cc635bd4cc0beab54bc3debae9f452a9a601772df48b6a0",
+  "sample_rows": 365,
+  "date_start": "2011-01-01",
+  "date_end": "2011-12-31",
+  "sample_columns": [
+    "dteday",
+    "cnt",
+    "workingday",
+    "mnth"
+  ],
+  "derivation": "Filter day.csv to 2011-01-01 through 2011-12-31 inclusive; retain dteday,cnt,workingday,mnth; sort ascending date; UTF-8 CSV with LF endings. No imputation, rescaling, or synthetic records.",
+  "units": {
+    "cnt": "completed rentals per calendar day (not unique bicycles or latent demand)",
+    "dteday": "source calendar date",
+    "workingday": "1 if neither weekend nor holiday; 0 otherwise",
+    "mnth": "month number, 1 through 12"
+  },
+  "scenario_assumptions": {
+    "threshold_rentals_per_day": 4000,
+    "threshold_is_measured_capacity": false
+  },
+  "chronological_split": {
+    "train": "2011-01-01 to 2011-08-31, 243 days",
+    "test": "2011-09-01 to 2011-12-31, 122 days"
+  }
+}

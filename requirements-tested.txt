@@ -1,0 +1,10 @@
+# Versions used for this milestone's clean-kernel execution (Python 3.10.9).
+# This is a direct-dependency snapshot, not a cross-platform transitive lockfile.
+numpy==1.24.2
+pandas==2.0.0
+scipy==1.10.1
+matplotlib==3.7.1
+jupyterlab==4.5.7
+ipykernel==6.19.2
+nbformat==5.7.0
+nbclient==0.5.13
